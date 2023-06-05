@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Task10</title>
+</head>
+
+<body>
+    <script>
+        const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        const mapped = arr.map(val => val + 30);
+        console.log("map function   ", mapped);
+        const fil = arr.filter(e => e % 2 == 0);
+        console.log("filter function   ", fil);
+        const sort = arr.sort((a, b) => a > b ? -1 : 1);
+        console.log("sort function   ", sort);
+        console.log("forEach function   ");
+        arr.forEach(val => { console.log(val) });
+        const arr1 = [10,11,12,13,14,15,16,17,18,19,20]
+        const arr2 = arr.concat(arr1);
+        console.log("arr ",arr);
+        console.log("arr1 ",arr1);
+        console.log("concat function   ", arr2);
+        const every=arr2.every(val =>val>10);
+        console.log("every function",every);
+        const some=arr2.some(val =>val>10);
+        console.log("some function",some);
+        console.log("include function 2?",arr2.includes(2));
+        console.log("join function", arr1.join(''));
+        console.log("reduce function", arr2.reduce((total,curr)=>total+curr));
+        console.log("find function", arr2.find(val =>val>5));
+        console.log("findIndex function", arr2.findIndex(val =>val==5));
+        console.log("indexOf function", arr2.indexOf(5));
+        const arr3=new Array(10);
+        console.log("fill function", arr3.fill(5));
+        console.log("slice function", arr3.slice(5,8));
+        console.log("reverse function", arr2.reverse());
+        arr2.push(150);
+        console.log("push function", arr2);
+        arr2.pop(150);
+        console.log("pop function", arr2);
+        arr2.shift()
+        console.log("shift function", arr2);
+        arr2.unshift(150)
+        console.log("unshift function", arr2);
+    </script>
+    <h1 class="text-center">Use Inspect</h1>
+</body>
+
+</html>
